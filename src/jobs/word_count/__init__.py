@@ -3,7 +3,7 @@ from operator import add
 
 def get_keyval(row):
     word = filter(lambda r: r is not None, row)
-    return [[w.strip().lower(), 1] for w in words]
+    return [[w.strip().lower(), 1] for w in word]
 
 
 def run(spark, config):
